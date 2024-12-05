@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(145deg, #f0f0f3, #ea83d7);
+    margin: 0;
+}
+
+.calculator {
+    width: 350px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #f6f8fb);
+    box-shadow: 5px 5px 15px #c3c3c3, -5px -5px 15px #ffffff;
+    padding: 20px;
+}
+
+.display {
+    background: #111112;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 5px #1c2a35, inset -3px -3px 5px #35495e;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e4e4e7, #ffffff);
+    box-shadow: 3px 3px 6px #c3c3c3, -3px -3px 6px #ffffff;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #f0f0f3;
+    box-shadow: 2px 2px 4px #c3c3c3, -2px -2px 4px #ffffff;
+    transform: scale(1.05);
+}
+
+button:active {
+    background: #d1d9e6;
+    box-shadow: inset 3px 3px 6px #c3c3c3, inset -3px -3px 6px #ffffff;
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+button.operator {
+    background: #3498db;
+    color: white;
+    box-shadow: 3px 3px 6px #267abf, -3px -3px 6px #3db2ff;
+}
+
+button.operator:hover {
+    background: #2980b9;
+}
+
+button.clear {
+    background: #e74c3c;
+    color: white;
+    box-shadow: 3px 3px 6px #c0392b, -3px -3px 6px #ff6f5e;
+}
+
+button.clear:hover {
+    background: #c0392b;
+}
+
+button.equals {
+    background: #2ecc71;
+    color: white;
+    box-shadow: 3px 3px 6px #27ae60, -3px -3px 6px #4afa84;
+    grid-row: span 2;
+}
+
+button.equals:hover {
+    background: #27ae60;
+}
+
